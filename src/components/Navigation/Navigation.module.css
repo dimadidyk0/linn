@@ -1,0 +1,18 @@
+.nav {
+  display: flex;
+  align-items: center;
+  height: 48px;
+}
+
+.link {
+  padding: 0 16px;
+  font-size: 16px;
+  font-weight: bold;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.link:hover {
+  background-color: var(--ternary-color);
+}
