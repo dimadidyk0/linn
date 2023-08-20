@@ -1,7 +1,7 @@
 export const useNavigation = () => {
   return [
-    { title: "Levels" },
-    { title: "Theory" },
-    { title: "Practive" },
+    { title: "Levels", link: "/levels" },
+    { title: "Theory", link: "/theory" },
+    { title: "Practive", link: "/practive" },
   ];
 };

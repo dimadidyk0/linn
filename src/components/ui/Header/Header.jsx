@@ -1,5 +1,5 @@
-import Navigation from "../Navigation/Navigation";
-import Container from "../ui/Container/Container";
+import Navigation from "../../Navigation/Navigation";
+import Container from "../Container/Container";
 import s from "./Header.module.css";
 
 export default function Header() {
