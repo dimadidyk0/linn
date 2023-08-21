@@ -2,17 +2,20 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { ErrorPage } from "./pages/ErrorPage/ErrorPage";
-import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import "./assets/styles/index.css";
-import "./assets/styles/variables.css";
 import { Layout } from "./components/ui/Layout/Layout";
+import LevelsPage from "./pages/LevelsPage/LevelsPage";
+import TheoryPage from "./pages/TheoryPage/TheoryPage";
+import PractivePage from "./pages/PractivePage/PractivePage";
 import {
-  BASE_ROUTE,
+  ROOT_ROUTE,
   LEVELS_ROUTE,
   PRACTICE_ROUTE,
   THEORY_ROUTE,
 } from "./constants/routeTemplates";
+import "./assets/styles/index.css";
+import "./assets/styles/variables.css";
+import RootPage from "./pages/RootPage/RootPage";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -20,10 +23,10 @@ root.render(
     <BrowserRouter>
       <Layout>
         <Routes>
-          <Route path={BASE_ROUTE} element={<App />} />
-          <Route path={LEVELS_ROUTE} element={<App />} />
-          <Route path={THEORY_ROUTE} element={<App />} />
-          <Route path={PRACTICE_ROUTE} element={<App />} />
+          <Route path={ROOT_ROUTE} element={<RootPage />} />
+          <Route path={LEVELS_ROUTE} element={<LevelsPage />} />
+          <Route path={THEORY_ROUTE} element={<TheoryPage />} />
+          <Route path={PRACTICE_ROUTE} element={<PractivePage />} />
           <Route path="*" element={<ErrorPage />} />
         </Routes>
       </Layout>
