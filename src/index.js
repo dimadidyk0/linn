@@ -1,9 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { ErrorPage } from "./pages/ErrorPage/ErrorPage";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
@@ -11,26 +8,17 @@ import "./assets/styles/index.css";
 import "./assets/styles/variables.css";
 import { Layout } from "./components/ui/Layout/Layout";
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: (
-      <Layout>
-        <App />
-      </Layout>
-    ),
-    errorElement: (
-      <Layout>
-        <ErrorPage />
-      </Layout>
-    ),
-  },
-]);
-
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <BrowserRouter>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<App />} />
+          <Route path="*" element={<ErrorPage />} />
+        </Routes>
+      </Layout>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
