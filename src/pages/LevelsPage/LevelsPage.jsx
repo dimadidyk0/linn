@@ -1,3 +1,4 @@
+import LevelBanner from "../../components/LevelBanner/LevelBanner";
 import Container from "../../components/ui/Container/Container";
 import { useFetchLevels } from "../../hooks/api/useFetchLevels";
 
@@ -9,7 +10,7 @@ export function LevelsPage() {
       {isLoading
         ? "Loading..."
         : data.map((level) => (
-            <div key={level.id}>{level.title}</div>
+            <LevelBanner key={level.id} {...level} />
           ))}
     </Container>
   );

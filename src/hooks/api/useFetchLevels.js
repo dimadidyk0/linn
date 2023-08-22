@@ -14,17 +14,17 @@ export const mockLevelsResponse = [
       },
       {
         id: 1235,
-        title: "1",
+        title: "2",
         description: "Lorem",
       },
       {
         id: 1236,
-        title: "1",
+        title: "3",
         description: "Lorem",
       },
       {
         id: 1237,
-        title: "1",
+        title: "4",
         description: "Lorem",
       },
     ],
@@ -41,17 +41,17 @@ export const mockLevelsResponse = [
       },
       {
         id: 1235,
-        title: "1",
+        title: "2",
         description: "Lorem",
       },
       {
         id: 1236,
-        title: "1",
+        title: "3",
         description: "Lorem",
       },
       {
         id: 1237,
-        title: "1",
+        title: "4",
         description: "Lorem",
       },
     ],
@@ -68,17 +68,17 @@ export const mockLevelsResponse = [
       },
       {
         id: 1235,
-        title: "1",
+        title: "2",
         description: "Lorem",
       },
       {
         id: 1236,
-        title: "1",
+        title: "3",
         description: "Lorem",
       },
       {
         id: 1237,
-        title: "1",
+        title: "4",
         description: "Lorem",
       },
     ],

@@ -14,3 +14,8 @@ a {
   text-decoration: none;
   color: var(--text-color);
 }
+
+* {
+  padding: 0;
+  margin: 0;
+}
