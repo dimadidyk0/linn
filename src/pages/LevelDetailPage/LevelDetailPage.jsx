@@ -10,7 +10,26 @@ export function LevelDetailPage() {
   return (
     <Container>
       <h1 className={s.title}>Level {id}</h1>
-      {isLoading ? "Loading..." : <div>{levelData.description}</div>}
+      {isLoading ? (
+        "Loading..."
+      ) : (
+        <div>
+          <p>{levelData?.description}</p>
+          {levelData?.lessonGroups?.map((group) => (
+            <div key={group.id}>
+              <h2>{group.title}</h2>
+              <p>
+                Type: <b>{group.type}</b>
+              </p>
+              <div>
+                {group.lessons.map((lesson) => (
+                  <div key={lesson}>{lesson}</div>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      )}
     </Container>
   );
 }

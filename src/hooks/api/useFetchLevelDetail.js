@@ -13,13 +13,13 @@ export const mockLevelDetailResponse = {
       lessons: [1, 2, 3],
     },
     {
-      id: 12421,
+      id: 124212,
       title: "Real-life examples",
       type: LESSON_TYPE.EXAMPLE,
       lessons: [21, 22, 23],
     },
     {
-      id: 12421,
+      id: 124213,
       title: "Practive",
       type: LESSON_TYPE.PRACTIVE,
       lessons: [31, 32, 33],
