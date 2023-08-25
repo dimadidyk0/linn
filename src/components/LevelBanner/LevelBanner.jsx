@@ -1,5 +1,7 @@
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 import s from "./LevelBanner.module.css";
+import { buildLevelDtailRoute } from "../../utils/route";
 
 export function LevelBanner({ title, color, id, sublevels }) {
   return (
@@ -7,9 +9,13 @@ export function LevelBanner({ title, color, id, sublevels }) {
       <h3 className={s.title}>{title}</h3>
       <div className={s.list}>
         {sublevels.map((sublevel) => (
-          <div className={s.sublevel} key={sublevel.id}>
+          <Link
+            className={s.sublevel}
+            to={buildLevelDtailRoute(sublevel.id)}
+            key={sublevel.id}
+          >
             {sublevel.title}
-          </div>
+          </Link>
         ))}
       </div>
     </div>
