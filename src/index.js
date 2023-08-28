@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { Provider } from "react-redux";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { ErrorPage } from "./pages/ErrorPage/ErrorPage";
 import reportWebVitals from "./reportWebVitals";
@@ -18,25 +19,28 @@ import "./assets/styles/index.css";
 import "./assets/styles/variables.css";
 import RootPage from "./pages/RootPage/RootPage";
 import LevelDetailPage from "./pages/LevelDetailPage/LevelDetailPage";
+import store from "./store";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <Layout>
-        <Routes>
-          <Route path={ROOT_ROUTE} element={<RootPage />} />
-          <Route path={LEVEL_ROUTE} element={<LevelsPage />} />
-          <Route
-            path={LEVEL_DETAIL_ROUTE}
-            element={<LevelDetailPage />}
-          />
-          <Route path={THEORY_ROUTE} element={<TheoryPage />} />
-          <Route path={PRACTICE_ROUTE} element={<PractivePage />} />
-          <Route path="*" element={<ErrorPage />} />
-        </Routes>
-      </Layout>
-    </BrowserRouter>
+    <Provider store={store}>
+      <BrowserRouter>
+        <Layout>
+          <Routes>
+            <Route path={ROOT_ROUTE} element={<RootPage />} />
+            <Route path={LEVEL_ROUTE} element={<LevelsPage />} />
+            <Route
+              path={LEVEL_DETAIL_ROUTE}
+              element={<LevelDetailPage />}
+            />
+            <Route path={THEORY_ROUTE} element={<TheoryPage />} />
+            <Route path={PRACTICE_ROUTE} element={<PractivePage />} />
+            <Route path="*" element={<ErrorPage />} />
+          </Routes>
+        </Layout>
+      </BrowserRouter>
+    </Provider>
   </React.StrictMode>
 );
 
