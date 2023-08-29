@@ -19,7 +19,7 @@ import "./assets/styles/index.css";
 import "./assets/styles/variables.css";
 import RootPage from "./pages/RootPage/RootPage";
 import LevelDetailPage from "./pages/LevelDetailPage/LevelDetailPage";
-import store from "./store";
+import store from "./store/store";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
