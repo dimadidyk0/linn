@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom";
 import Container from "../../components/ui/Container/Container";
 import s from "./LevelDetailPage.module.css";
 import { useFetchLevelDetail } from "../../hooks/api/useFetchLevelDetail";
-import { LESSON_TYPE } from "../../constants/lessonType";
+import LessonPreview from "./LessonPreview/LessonPreview";
 
 export function LevelDetailPage() {
   const { id } = useParams();
@@ -22,22 +22,16 @@ export function LevelDetailPage() {
               <p>
                 Type: <b>{group.type}</b>
               </p>
-              {group.type == LESSON_TYPE.CHARACTER ? (
-                <div>
-                  {group.lessons.map((lesson) => (
-                    <div key={lesson.character}>
-                      <strong>{lesson.character}</strong>
-                      {lesson.meaning}
-                    </div>
-                  ))}
-                </div>
-              ) : (
-                <div>
-                  {group.lessons.map((lesson) => (
-                    <div key={lesson}>{lesson}</div>
-                  ))}
-                </div>
-              )}
+
+              <div>
+                {group.lessons.map((lesson) => (
+                  <LessonPreview
+                    key={lesson.character || lesson}
+                    lesson={lesson}
+                    type={group.type}
+                  />
+                ))}
+              </div>
             </div>
           ))}
         </div>
