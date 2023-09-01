@@ -23,7 +23,7 @@ export function LevelDetailPage() {
                 Type: <b>{group.type}</b>
               </p>
 
-              <div>
+              <div className={s.list}>
                 {group.lessons.map((lesson) => (
                   <LessonPreview
                     key={lesson.character || lesson}
