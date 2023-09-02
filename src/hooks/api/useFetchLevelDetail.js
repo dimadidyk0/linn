@@ -22,12 +22,12 @@ export const mockLevelDetailResponse = {
         { character: "亠", meaning: "Lid" },
       ],
     },
-    {
-      id: 124212,
-      title: "Kanji",
-      type: LESSON_TYPE.THEORY,
-      lessons: [21, 22, 23],
-    },
+    // {
+    //   id: 124212,
+    //   title: "Kanji",
+    //   type: LESSON_TYPE.THEORY,
+    //   lessons: [21, 22, 23],
+    // },
   ],
 };
 
