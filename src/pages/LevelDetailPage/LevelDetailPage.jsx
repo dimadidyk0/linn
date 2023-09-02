@@ -23,28 +23,23 @@ export function LevelDetailPage() {
               {levelData.titleSubtext}
             </span>
           </h1>
+          <p className={s.description}>{levelData?.description}</p>
 
-          <div>
-            <p className={s.description}>{levelData?.description}</p>
-            {levelData?.lessonGroups?.map((group) => (
-              <div key={group.id}>
-                <h2>{group.title}</h2>
-                <p>
-                  Type: <b>{group.type}</b>
-                </p>
+          {levelData?.lessonGroups?.map((group) => (
+            <div key={group.id}>
+              <h2 className={s.listTitle}>{group.title}</h2>
 
-                <div className={s.list}>
-                  {group.lessons.map((lesson) => (
-                    <LessonPreview
-                      key={lesson.character || lesson}
-                      lesson={lesson}
-                      type={group.type}
-                    />
-                  ))}
-                </div>
+              <div className={s.list}>
+                {group.lessons.map((lesson) => (
+                  <LessonPreview
+                    key={lesson.character || lesson}
+                    lesson={lesson}
+                    type={group.type}
+                  />
+                ))}
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
       )}
     </Container>
