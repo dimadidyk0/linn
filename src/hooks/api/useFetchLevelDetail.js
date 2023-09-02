@@ -4,7 +4,9 @@ import { LESSON_TYPE } from "../../constants/lessonType";
 export const mockLevelDetailResponse = {
   id: 1234,
   title: "1",
-  description: "Radicals and kanji",
+  titleSubtext: "Radicals and kanji",
+  description:
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
   lessonGroups: [
     {
       id: 12421,

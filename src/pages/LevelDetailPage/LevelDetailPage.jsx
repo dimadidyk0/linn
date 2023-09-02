@@ -16,10 +16,16 @@ export function LevelDetailPage() {
       {isLoading ? (
         <Loader />
       ) : (
-        <>
-          <h1 className={s.title}>Level {levelData.title}</h1>
+        <div className={s.root}>
+          <h1 className={s.title}>
+            Level {levelData.title}{" "}
+            <span className={s.subtext}>
+              {levelData.titleSubtext}
+            </span>
+          </h1>
+
           <div>
-            <p>{levelData?.description}</p>
+            <p className={s.description}>{levelData?.description}</p>
             {levelData?.lessonGroups?.map((group) => (
               <div key={group.id}>
                 <h2>{group.title}</h2>
@@ -39,7 +45,7 @@ export function LevelDetailPage() {
               </div>
             ))}
           </div>
-        </>
+        </div>
       )}
     </Container>
   );

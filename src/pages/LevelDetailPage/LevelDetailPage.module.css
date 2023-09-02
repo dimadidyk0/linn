@@ -1,4 +1,28 @@
+.root {
+  padding: 12px 0;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 8px 0;
+}
+
+.subtext {
+  color: var(--ternary-color);
+  font-weight: normal;
+  font-size: 28px;
+}
+
 .list {
   display: flex;
   flex-wrap: wrap;
+}
+
+.description {
+  padding: 12px 16px;
+  background: var(--secondary-color);
+  margin: 12px 0;
+  font-size: 16px;
+  line-height: 24px;
 }
