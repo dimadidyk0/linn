@@ -1,0 +1,90 @@
+{
+  "levels": [
+    {
+      "id": 1,
+      "title": "Beginner",
+      "color": "yellow",
+      "number": 1,
+      "sublevels": [
+        {
+          "id": 1234,
+          "title": "1",
+          "description": "Lorem"
+        },
+        {
+          "id": 1235,
+          "title": "2",
+          "description": "Lorem"
+        },
+        {
+          "id": 1236,
+          "title": "3",
+          "description": "Lorem"
+        },
+        {
+          "id": 1237,
+          "title": "4",
+          "description": "Lorem"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Inermediate",
+      "color": "orange",
+      "sublevels": [
+        {
+          "id": 1234,
+          "title": "1",
+          "description": "Lorem"
+        },
+        {
+          "id": 1235,
+          "title": "2",
+          "description": "Lorem"
+        },
+        {
+          "id": 1236,
+          "title": "3",
+          "description": "Lorem"
+        },
+        {
+          "id": 1237,
+          "title": "4",
+          "description": "Lorem"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Advanced",
+      "color": "red",
+      "sublevels": [
+        {
+          "id": 1234,
+          "title": "1",
+          "description": "Lorem"
+        },
+        {
+          "id": 1235,
+          "title": "2",
+          "description": "Lorem"
+        },
+        {
+          "id": 1236,
+          "title": "3",
+          "description": "Lorem"
+        },
+        {
+          "id": 1237,
+          "title": "4",
+          "description": "Lorem"
+        }
+      ]
+    }
+  ],
+  "posts": [
+    { "id": 1, "title": "json-server", "author": "typicode" }
+  ],
+  "profile": { "name": "typicode" }
+}
