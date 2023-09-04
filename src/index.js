@@ -6,13 +6,13 @@ import { ErrorPage } from "./pages/ErrorPage/ErrorPage";
 import reportWebVitals from "./reportWebVitals";
 import { Layout } from "./components/ui/Layout/Layout";
 import LevelsPage from "./pages/LevelsPage/LevelsPage";
-import TheoryPage from "./pages/TheoryPage/TheoryPage";
-import PractivePage from "./pages/PractivePage/PractivePage";
+// import TheoryPage from "./pages/TheoryPage/TheoryPage";
+// import PractivePage from "./pages/PractivePage/PractivePage";
 import {
   ROOT_ROUTE,
   LEVEL_ROUTE,
-  PRACTICE_ROUTE,
-  THEORY_ROUTE,
+  // PRACTICE_ROUTE,
+  // THEORY_ROUTE,
   LEVEL_DETAIL_ROUTE,
 } from "./constants/routeTemplates";
 import "./assets/styles/index.css";
@@ -34,8 +34,8 @@ root.render(
               path={LEVEL_DETAIL_ROUTE}
               element={<LevelDetailPage />}
             />
-            <Route path={THEORY_ROUTE} element={<TheoryPage />} />
-            <Route path={PRACTICE_ROUTE} element={<PractivePage />} />
+            {/* <Route path={THEORY_ROUTE} element={<TheoryPage />} />
+            <Route path={PRACTICE_ROUTE} element={<PractivePage />} /> */}
             <Route path="*" element={<ErrorPage />} />
           </Routes>
         </Layout>
