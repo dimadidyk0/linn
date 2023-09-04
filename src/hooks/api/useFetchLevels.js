@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useQuery } from "@tanstack/react-query";
 
 export const mockLevelsResponse = [
   {
@@ -86,19 +86,11 @@ export const mockLevelsResponse = [
 ];
 
 export const useFetchLevels = () => {
-  const [levels, setLevels] = useState([]);
-  const [isLoading, setIsLoading] = useState(false);
+  const query = useQuery({
+    queryKey: ["levels"],
+    queryFn: () =>
+      fetch("http://localhost:3004/levels").then((r) => r.json()),
+  });
 
-  useEffect(() => {
-    setIsLoading(true);
-    setTimeout(() => {
-      setLevels(mockLevelsResponse);
-      setIsLoading(false);
-    }, 1000);
-  }, []);
-
-  return {
-    isLoading,
-    data: levels,
-  };
+  return query;
 };
