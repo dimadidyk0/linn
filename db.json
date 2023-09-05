@@ -1,86 +1,76 @@
 {
   "levels": [
     {
-      "id": 1,
-      "title": "Beginner",
+      "id": 1234,
+      "title": "1",
       "color": "yellow",
-      "number": 1,
-      "sublevels": [
-        {
-          "id": 1234,
-          "title": "1",
-          "description": "Lorem"
-        },
-        {
-          "id": 1235,
-          "title": "2",
-          "description": "Lorem"
-        },
-        {
-          "id": 1236,
-          "title": "3",
-          "description": "Lorem"
-        },
-        {
-          "id": 1237,
-          "title": "4",
-          "description": "Lorem"
-        }
-      ]
+      "description": "Lorem"
     },
     {
-      "id": 2,
-      "title": "Inermediate",
+      "id": 1235,
+      "title": "2",
+      "color": "yellow",
+      "description": "Lorem"
+    },
+    {
+      "id": 1236,
+      "title": "3",
+      "color": "yellow",
+      "description": "Lorem"
+    },
+    {
+      "id": 1237,
+      "title": "4",
+      "color": "yellow",
+      "description": "Lorem"
+    },
+    {
+      "id": 1234,
+      "title": "5",
       "color": "orange",
-      "sublevels": [
-        {
-          "id": 1234,
-          "title": "1",
-          "description": "Lorem"
-        },
-        {
-          "id": 1235,
-          "title": "2",
-          "description": "Lorem"
-        },
-        {
-          "id": 1236,
-          "title": "3",
-          "description": "Lorem"
-        },
-        {
-          "id": 1237,
-          "title": "4",
-          "description": "Lorem"
-        }
-      ]
+      "description": "Lorem"
     },
     {
-      "id": 3,
-      "title": "Advanced",
+      "id": 1235,
+      "title": "6",
+      "color": "orange",
+      "description": "Lorem"
+    },
+    {
+      "id": 1236,
+      "title": "7",
+      "color": "orange",
+      "description": "Lorem"
+    },
+    {
+      "id": 1237,
+      "title": "8",
+      "color": "orange",
+      "description": "Lorem"
+    },
+    {
+      "id": 1234,
+      "title": "1",
       "color": "red",
-      "sublevels": [
-        {
-          "id": 1234,
-          "title": "1",
-          "description": "Lorem"
-        },
-        {
-          "id": 1235,
-          "title": "2",
-          "description": "Lorem"
-        },
-        {
-          "id": 1236,
-          "title": "3",
-          "description": "Lorem"
-        },
-        {
-          "id": 1237,
-          "title": "4",
-          "description": "Lorem"
-        }
-      ]
+      "description": "Lorem"
+    },
+    {
+      "id": 1235,
+      "title": "2",
+      "color": "red",
+      "description": "Lorem"
+    },
+    {
+      "id": 1236,
+      "title": "3",
+      "color": "red",
+      "description": "Lorem"
+    },
+    {
+      "id": 1237,
+      "title": "4",
+      "color": "red",
+      "description": "Lorem"
     }
   ],
   "posts": [

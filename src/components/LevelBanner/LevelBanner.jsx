@@ -3,22 +3,16 @@ import { Link } from "react-router-dom";
 import s from "./LevelBanner.module.css";
 import { buildLevelDtailRoute } from "../../utils/route";
 
-export function LevelBanner({ title, color, id, sublevels }) {
+export function LevelBanner({ title, color, id }) {
   return (
-    <div className={s.levelBanner} style={{ "--color": color }}>
-      <h3 className={s.title}>{title}</h3>
-      <div className={s.list}>
-        {sublevels.map((sublevel) => (
-          <Link
-            className={s.sublevel}
-            to={buildLevelDtailRoute(sublevel.id)}
-            key={sublevel.id}
-          >
-            {sublevel.title}
-          </Link>
-        ))}
-      </div>
-    </div>
+    <Link
+      className={s.level}
+      to={buildLevelDtailRoute(id)}
+      key={id}
+      style={{ "--color": color }}
+    >
+      {title}
+    </Link>
   );
 }
 
@@ -26,13 +20,6 @@ LevelBanner.propTypes = {
   title: PropTypes.string,
   color: PropTypes.string,
   id: PropTypes.number,
-  sublevels: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.number,
-      title: PropTypes.string,
-      desciption: PropTypes.string,
-    })
-  ),
 };
 
 export default LevelBanner;
