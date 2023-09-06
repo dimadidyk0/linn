@@ -15,7 +15,7 @@ export function LevelsPage() {
         <>
           <h1 className={s.title}>Levels</h1>
           <div className={s.list}>
-            {data.map((level) => (
+            {data?.map?.((level) => (
               <LevelBanner key={level.id} {...level} />
             ))}
           </div>
