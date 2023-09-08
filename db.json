@@ -3,24 +3,18 @@
     {
       "id": 10001,
       "title": "1",
-      "color": "yellow",
+      "color": "green",
       "titleSubtext": "Radicals and kanji",
-      "description":
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "description": "The first ones radicals to learn",
       "lessonGroups": [
         {
           "title": "Radicals",
           "type": "character",
           "lessons": [
-            { "character": "亅", "meaning": "Barb" },
-            { "character": "大", "meaning": "Big" },
-            { "character": "工", "meaning": "Construction" },
-            { "character": "十", "meaning": "Cross" },
-            { "character": "丶", "meaning": "Drop" },
-            { "character": "入", "meaning": "Enter" },
-            { "character": "ハ", "meaning": "Fins" },
-            { "character": "一", "meaning": "Ground" },
-            { "character": "亠", "meaning": "Lid" }
+            { "character": "亅", "meaning": "Barb", "id": "barb" },
+            { "character": "大", "meaning": "Big", "id": "big" },
+            { "character": "工", "meaning": "Construction", "id": "construction" },
+            { "character": "十", "meaning": "Cross", "id": "cross" }
           ]
         }
       ]
@@ -30,29 +24,27 @@
       "title": "2",
       "color": "yellow",
       "titleSubtext": "Radicals and kanji",
-      "description":
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "description": "Mor complex radicarls",
       "lessonGroups": [
         {
           "title": "Radicals",
           "type": "character",
           "lessons": [
-            { "character": "亅", "meaning": "Barb" },
-            { "character": "大", "meaning": "Big" },
-            { "character": "工", "meaning": "Construction" },
-            { "character": "十", "meaning": "Cross" },
-            { "character": "丶", "meaning": "Drop" },
-            { "character": "入", "meaning": "Enter" },
-            { "character": "ハ", "meaning": "Fins" },
-            { "character": "一", "meaning": "Ground" },
-            { "character": "亠", "meaning": "Lid" }
+            { "character": "丶", "meaning": "Drop", "id": "drop" },
+            { "character": "入", "meaning": "Enter", "id": "enter" },
+            { "character": "ハ", "meaning": "Fins", "id": "fins" },
+            { "character": "一", "meaning": "Ground", "id": "ground" },
+            { "character": "亠", "meaning": "Lid", "id": "lid" }
           ]
         }
       ]
     }
   ],
-  "posts": [
-    { "id": 1, "title": "json-server", "author": "typicode" }
+  "radicals": [
+    { "character": "亅", "meaning": "Barb", "id": "barb" },
+    { "character": "大", "meaning": "Big", "id": "big" },
+    { "character": "工", "meaning": "Construction", "id": "construction" },
+    { "character": "十", "meaning": "Cross", "id": "cross" }
   ],
   "profile": { "name": "typicode" }
 }
