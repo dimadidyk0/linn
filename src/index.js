@@ -19,12 +19,14 @@ import {
   // PRACTICE_ROUTE,
   // THEORY_ROUTE,
   LEVEL_DETAIL_ROUTE,
+  RADICAL_DETAIL_ROUTE,
 } from "./constants/routeTemplates";
 import "./assets/styles/index.css";
 import "./assets/styles/variables.css";
 import RootPage from "./pages/RootPage/RootPage";
 import LevelDetailPage from "./pages/LevelDetailPage/LevelDetailPage";
 import store from "./store/store";
+import RadicalPage from "./pages/RadicalPage/RadicalPage";
 
 const queryClient = new QueryClient();
 
@@ -41,6 +43,10 @@ root.render(
               <Route
                 path={LEVEL_DETAIL_ROUTE}
                 element={<LevelDetailPage />}
+              />
+              <Route
+                path={RADICAL_DETAIL_ROUTE}
+                element={<RadicalPage />}
               />
               {/* <Route path={THEORY_ROUTE} element={<TheoryPage />} />
             <Route path={PRACTICE_ROUTE} element={<PractivePage />} /> */}
