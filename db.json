@@ -44,7 +44,12 @@
     { "character": "亅", "meaning": "Barb", "id": "barb" },
     { "character": "大", "meaning": "Big", "id": "big" },
     { "character": "工", "meaning": "Construction", "id": "construction" },
-    { "character": "十", "meaning": "Cross", "id": "cross" }
+    { "character": "十", "meaning": "Cross", "id": "cross" },
+    { "character": "丶", "meaning": "Drop", "id": "drop" },
+    { "character": "入", "meaning": "Enter", "id": "enter" },
+    { "character": "ハ", "meaning": "Fins", "id": "fins" },
+    { "character": "一", "meaning": "Ground", "id": "ground" },
+    { "character": "亠", "meaning": "Lid", "id": "lid" }
   ],
   "profile": { "name": "typicode" }
 }

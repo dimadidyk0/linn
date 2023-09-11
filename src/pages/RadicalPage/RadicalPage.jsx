@@ -13,9 +13,16 @@ export function RadicalPage() {
       {isLoading ? (
         <Loader />
       ) : (
-        <div className={s.root}>
-          <h1 className={s.title}>Radical {data?.character}</h1>
-        </div>
+        <>
+          {data?.id ? (
+            <div className={s.root}>
+              <h1 className={s.title}>Radical {data?.character}</h1>
+              <p>{data?.meaning}</p>
+            </div>
+          ) : (
+            "No radical"
+          )}
+        </>
       )}
     </Container>
   );
