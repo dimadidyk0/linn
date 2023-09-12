@@ -3,6 +3,7 @@ import Container from "../../components/ui/Container/Container";
 import Loader from "../../components/ui/Loader/Loader";
 import { useFetchRadicalDetail } from "../../hooks/api/useFetchRadical";
 import s from "./RadicalPage.module.css";
+import EmptyMessage from "../../components/ui/EmptyMessage/EmptyMessage";
 
 export function RadicalPage() {
   const { id } = useParams();
@@ -20,7 +21,9 @@ export function RadicalPage() {
               <p>{data?.meaning}</p>
             </div>
           ) : (
-            "No radical"
+            <EmptyMessage>
+              <p>No radical found...</p>
+            </EmptyMessage>
           )}
         </>
       )}
