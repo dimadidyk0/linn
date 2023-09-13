@@ -20,6 +20,7 @@ import {
   // THEORY_ROUTE,
   LEVEL_DETAIL_ROUTE,
   RADICAL_DETAIL_ROUTE,
+  REVIEW_ROUTE,
 } from "./constants/routeTemplates";
 import "./assets/styles/index.css";
 import "./assets/styles/variables.css";
@@ -27,6 +28,7 @@ import RootPage from "./pages/RootPage/RootPage";
 import LevelDetailPage from "./pages/LevelDetailPage/LevelDetailPage";
 import store from "./store/store";
 import RadicalPage from "./pages/RadicalPage/RadicalPage";
+import ReviewPage from "./pages/ReviewPage/ReviewPage";
 
 const queryClient = new QueryClient();
 
@@ -48,8 +50,7 @@ root.render(
                 path={RADICAL_DETAIL_ROUTE}
                 element={<RadicalPage />}
               />
-              {/* <Route path={THEORY_ROUTE} element={<TheoryPage />} />
-            <Route path={PRACTICE_ROUTE} element={<PractivePage />} /> */}
+              <Route path={REVIEW_ROUTE} element={<ReviewPage />} />
               <Route path="*" element={<ErrorPage />} />
             </Routes>
           </Layout>
