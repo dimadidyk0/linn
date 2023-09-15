@@ -51,5 +51,43 @@
     { "character": "一", "meaning": "Ground", "id": "ground" },
     { "character": "亠", "meaning": "Lid", "id": "lid" }
   ],
+  "reviews": [
+    {
+      "type": "radical",
+      "data": {
+        "character": "ハ", "meaning": "Fins", "id": "fins"
+      }
+    },
+    {
+      "type": "radical",
+      "data": {
+        "character": "亅", "meaning": "Barb", "id": "barb"
+      }
+    },
+    {
+      "type": "radical",
+      "data": {
+        "character": "大", "meaning": "Big", "id": "big"
+      }
+    },
+    {
+      "type": "radical",
+      "data": {
+        "character": "工", "meaning": "Construction", "id": "construction"
+      }
+    },
+    {
+      "type": "radical",
+      "data": {
+        "character": "十", "meaning": "Cross", "id": "cross"
+      }
+    },
+    {
+      "type": "radical",
+      "data": {
+        "character": "丶", "meaning": "Drop", "id": "drop"
+      }
+    }
+  ],
   "profile": { "name": "typicode" }
 }
