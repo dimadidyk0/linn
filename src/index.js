@@ -21,6 +21,7 @@ import {
   LEVEL_DETAIL_ROUTE,
   RADICAL_DETAIL_ROUTE,
   REVIEW_ROUTE,
+  TESTS_ROUTE,
 } from "./constants/routeTemplates";
 import "./assets/styles/index.css";
 import "./assets/styles/variables.css";
@@ -29,6 +30,7 @@ import LevelDetailPage from "./pages/LevelDetailPage/LevelDetailPage";
 import store from "./store/store";
 import RadicalPage from "./pages/RadicalPage/RadicalPage";
 import ReviewPage from "./pages/ReviewPage/ReviewPage";
+import TestsPage from "./pages/TestsPage/TestsPage";
 
 const queryClient = new QueryClient();
 
@@ -42,6 +44,7 @@ root.render(
             <Routes>
               <Route path={ROOT_ROUTE} element={<RootPage />} />
               <Route path={LEVEL_ROUTE} element={<LevelsPage />} />
+              <Route path={TESTS_ROUTE} element={<TestsPage />} />
               <Route
                 path={LEVEL_DETAIL_ROUTE}
                 element={<LevelDetailPage />}
