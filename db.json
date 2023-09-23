@@ -90,5 +90,25 @@
     }
   ],
   "lessons": [],
+  "tests": [
+    {
+      "desription": "Lorem...",
+      "singleAnswer": true,
+      "answerOptions": [
+        {
+          "text": "right...",
+          "isCorrect": true
+        },
+        {
+          "text": "wrong options...",
+          "isCorrect": false
+        },
+        {
+          "text": "wrong options 2...",
+          "isCorrect": false
+        }
+      ]
+    }
+  ],
   "profile": { "name": "typicode" }
 }
