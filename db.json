@@ -92,19 +92,28 @@
   "lessons": [],
   "tests": [
     {
-      "desription": "Lorem...",
-      "singleAnswer": true,
+      "desription": "When the hexadecimal value ABCD in a 32-bit register is logically shifted right by two bits, which of the following is the resulting value in hexadecimal?",
+      "id": "12313",
+      "type": "radio",
       "answerOptions": [
         {
-          "text": "right...",
+          "name": "a)",
+          "value": "2AF3",
           "isCorrect": true
         },
         {
-          "text": "wrong options...",
+          "name": "b)",
+          "value": "6AF3",
           "isCorrect": false
         },
         {
-          "text": "wrong options 2...",
+          "name": "c)",
+          "value": "AF34",
+          "isCorrect": false
+        },
+        {
+          "name": "d)",
+          "value": "EAF3",
           "isCorrect": false
         }
       ]

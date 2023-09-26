@@ -1,12 +1,11 @@
 import Container from "../../components/ui/Container/Container";
 import Loader from "../../components/ui/Loader/Loader";
 import { useFetchTests } from "../../hooks/api/useFetchTests";
+import TestForm from "./TestForm/TestForm";
 import s from "./TestsPage.module.css";
 
 export function TestsPage() {
   const { isLoading, data } = useFetchTests();
-
-  console.log("\n\n\n", data);
 
   return (
     <Container>
@@ -15,6 +14,10 @@ export function TestsPage() {
       ) : (
         <>
           <h1 className={s.title}>Tests</h1>
+
+          {data.map((test) => (
+            <TestForm key={test.id} {...test} />
+          ))}
         </>
       )}
     </Container>
