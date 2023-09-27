@@ -15,7 +15,9 @@ export function TestsPage() {
     [setAnswers]
   );
 
-  console.log("\n\n\n", answers, "\n\n\n\n");
+  const questionsCountToDo =
+    data?.length - Object.keys(answers)?.length;
+  const isFinished = questionsCountToDo === 0;
 
   return (
     <Container>
@@ -24,15 +26,23 @@ export function TestsPage() {
       ) : (
         <>
           <h1 className={s.title}>Tests</h1>
-          <p>{data.length} questions</p>
 
-          {data.map((test) => (
-            <TestForm
-              key={test.id}
-              onSubmit={handleSubmit}
-              {...test}
-            />
-          ))}
+          {!isFinished ? (
+            <p>{questionsCountToDo} questions remain</p>
+          ) : (
+            <div>YOU DID IT!!</div>
+          )}
+
+          {data.map(
+            (test) =>
+              !answers[test.id] && (
+                <TestForm
+                  key={test.id}
+                  onSubmit={handleSubmit}
+                  {...test}
+                />
+              )
+          )}
         </>
       )}
     </Container>

@@ -13,9 +13,9 @@ export default function TestForm({
   const handleSubmit = useCallback(
     (e) => {
       e.preventDefault();
-      onSubmit({ id: answer });
+      onSubmit({ [id]: answer });
     },
-    [answer, onSubmit]
+    [answer, onSubmit, id]
   );
 
   return (
