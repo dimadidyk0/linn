@@ -1,14 +1,25 @@
 import PropTypes from "prop-types";
 import s from "./TestFrom.module.css";
+import { useCallback, useState } from "react";
 
 export default function TestForm({
   desription,
   answerOptions,
   type,
   onSubmit,
+  id,
 }) {
+  const [answer, setAnswer] = useState(null);
+  const handleSubmit = useCallback(
+    (e) => {
+      e.preventDefault();
+      onSubmit({ id: answer });
+    },
+    [answer, onSubmit]
+  );
+
   return (
-    <form className={s.root} onSubmit={onSubmit}>
+    <form className={s.root} onSubmit={handleSubmit}>
       <p className={s.description}>{desription}</p>
 
       {answerOptions.map((option) => {
@@ -18,13 +29,16 @@ export default function TestForm({
               type={type}
               name="fav_language"
               value={option.value}
+              onChange={() => setAnswer(option.value)}
             />
             {option.name} {option.value}
           </label>
         );
       })}
 
-      <button className={s.submit}>Submit</button>
+      <button disabled={!answer} className={s.submit}>
+        Submit
+      </button>
     </form>
   );
 }
