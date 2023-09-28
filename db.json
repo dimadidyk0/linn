@@ -94,7 +94,7 @@
     {
       "desription": "When the hexadecimal value ABCD in a 32-bit register is logically shifted right by two bits, which of the following is the resulting value in hexadecimal?",
       "id": "12313",
-      "correct": ["2AF3"],
+      "correct": "2AF3",
       "type": "radio",
       "answerOptions": [
         {
@@ -118,7 +118,7 @@
     {
       "desription": "What is the probability that at least three coins land heads up when four unbiased coins are tossed simultaneously?",
       "id": "123132",
-      "correct": ["5/16"],
+      "correct": "5/16",
       "type": "radio",
       "answerOptions": [
         {

@@ -19,6 +19,12 @@ export function TestsPage() {
     data?.length - Object.keys(answers)?.length;
   const isFinished = questionsCountToDo === 0;
 
+  const correctAnswersCount =
+    isFinished &&
+    data.filter(
+      (question) => answers[question.id] === question.correct
+    ).length;
+
   return (
     <Container>
       {isLoading ? (
@@ -30,7 +36,9 @@ export function TestsPage() {
           {!isFinished ? (
             <p>{questionsCountToDo} questions remain</p>
           ) : (
-            <div>YOU DID IT!!</div>
+            <div>
+              {correctAnswersCount} / {data.length}
+            </div>
           )}
 
           {data.map(
