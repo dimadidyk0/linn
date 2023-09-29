@@ -7,3 +7,22 @@
 .list {
   display: flex;
 }
+
+.reminder {
+  margin: 20px 0;
+  font-size: 20px;
+  color: #fff72c;
+  background-color: var(--secondary-color);
+  padding: 12px 20px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.result {
+  margin-top: 20px;
+  font-size: 24px;
+  background-color: var(--secondary-color);
+  padding: 40px 0;
+  color: #2cff44;
+  text-align: center;
+}

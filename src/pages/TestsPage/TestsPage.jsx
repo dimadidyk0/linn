@@ -31,13 +31,13 @@ export function TestsPage() {
         <Loader />
       ) : (
         <>
-          <h1 className={s.title}>Tests</h1>
-
           {!isFinished ? (
-            <p>{questionsCountToDo} questions remain</p>
+            <p className={s.reminder}>
+              <strong>{questionsCountToDo}</strong> questions remain
+            </p>
           ) : (
-            <div>
-              {correctAnswersCount} / {data.length}
+            <div className={s.result}>
+              Result: {correctAnswersCount} / {data.length}
             </div>
           )}
 
