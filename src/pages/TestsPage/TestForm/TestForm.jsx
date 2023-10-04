@@ -8,6 +8,7 @@ export default function TestForm({
   type,
   onSubmit,
   id,
+  name,
 }) {
   const [answer, setAnswer] = useState(null);
   const handleSubmit = useCallback(
@@ -20,6 +21,7 @@ export default function TestForm({
 
   return (
     <form className={s.root} onSubmit={handleSubmit}>
+      {name && <h3 className={s.name}>{name}</h3>}
       <p className={s.description}>{desription}</p>
 
       {answerOptions.map((option) => {
@@ -29,7 +31,7 @@ export default function TestForm({
               type={type}
               name="fav_language"
               value={option.value}
-              onChange={() => setAnswer(option.value)}
+              onChange={() => setAnswer(option.name)}
             />
             {option.name} {option.value}
           </label>
@@ -49,4 +51,5 @@ TestForm.propTypes = {
   answerOptions: PropTypes.arrayOf(),
   type: PropTypes.string, // TODO: add const for types
   onSubmit: PropTypes.func.isRequired,
+  name: PropTypes.string,
 };
