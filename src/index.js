@@ -22,6 +22,7 @@ import {
   RADICAL_DETAIL_ROUTE,
   REVIEW_ROUTE,
   TESTS_ROUTE,
+  TESTS_CREATE_ROUTE,
 } from "./constants/routeTemplates";
 import "./assets/styles/index.css";
 import "./assets/styles/variables.css";
@@ -31,6 +32,7 @@ import store from "./store/store";
 import RadicalPage from "./pages/RadicalPage/RadicalPage";
 import ReviewPage from "./pages/ReviewPage/ReviewPage";
 import TestsPage from "./pages/TestsPage/TestsPage";
+import CreateTestPage from "./pages/CreateTestPage/CreateTestPage";
 
 const queryClient = new QueryClient();
 
@@ -45,6 +47,10 @@ root.render(
               <Route path={ROOT_ROUTE} element={<RootPage />} />
               <Route path={LEVEL_ROUTE} element={<LevelsPage />} />
               <Route path={TESTS_ROUTE} element={<TestsPage />} />
+              <Route
+                path={TESTS_CREATE_ROUTE}
+                element={<CreateTestPage />}
+              />
               <Route
                 path={LEVEL_DETAIL_ROUTE}
                 element={<LevelDetailPage />}
