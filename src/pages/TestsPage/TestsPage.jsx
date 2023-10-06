@@ -41,7 +41,7 @@ export function TestsPage() {
             </div>
           )}
 
-          {data.map(
+          {data?.map?.(
             (test) =>
               !answers[test.id] && (
                 <TestForm

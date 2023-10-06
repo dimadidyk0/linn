@@ -24,7 +24,7 @@ export default function TestForm({
       {name && <h3 className={s.name}>{name}</h3>}
       <p className={s.description}>{desription}</p>
 
-      {answerOptions.map((option) => {
+      {answerOptions?.map?.((option) => {
         return (
           <label className={s.option} key={option.name}>
             <input

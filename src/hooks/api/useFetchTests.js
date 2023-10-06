@@ -9,3 +9,13 @@ export const useFetchTests = () => {
 
   return query;
 };
+
+export const createTest = (test) => {
+  return fetch(`http://localhost:3004/tests`, {
+    method: "POST",
+    body: JSON.stringify(test),
+    headers: {
+      "Content-Type": "application/json",
+    },
+  });
+};

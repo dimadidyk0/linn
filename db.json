@@ -11,10 +11,26 @@
           "title": "Radicals",
           "type": "character",
           "lessons": [
-            { "character": "亅", "meaning": "Barb", "id": "barb" },
-            { "character": "大", "meaning": "Big", "id": "big" },
-            { "character": "工", "meaning": "Construction", "id": "construction" },
-            { "character": "十", "meaning": "Cross", "id": "cross" }
+            {
+              "character": "亅",
+              "meaning": "Barb",
+              "id": "barb"
+            },
+            {
+              "character": "大",
+              "meaning": "Big",
+              "id": "big"
+            },
+            {
+              "character": "工",
+              "meaning": "Construction",
+              "id": "construction"
+            },
+            {
+              "character": "十",
+              "meaning": "Cross",
+              "id": "cross"
+            }
           ]
         }
       ]
@@ -30,62 +46,130 @@
           "title": "Radicals",
           "type": "character",
           "lessons": [
-            { "character": "丶", "meaning": "Drop", "id": "drop" },
-            { "character": "入", "meaning": "Enter", "id": "enter" },
-            { "character": "ハ", "meaning": "Fins", "id": "fins" },
-            { "character": "一", "meaning": "Ground", "id": "ground" },
-            { "character": "亠", "meaning": "Lid", "id": "lid" }
+            {
+              "character": "丶",
+              "meaning": "Drop",
+              "id": "drop"
+            },
+            {
+              "character": "入",
+              "meaning": "Enter",
+              "id": "enter"
+            },
+            {
+              "character": "ハ",
+              "meaning": "Fins",
+              "id": "fins"
+            },
+            {
+              "character": "一",
+              "meaning": "Ground",
+              "id": "ground"
+            },
+            {
+              "character": "亠",
+              "meaning": "Lid",
+              "id": "lid"
+            }
           ]
         }
       ]
     }
   ],
   "radicals": [
-    { "character": "亅", "meaning": "Barb", "id": "barb" },
-    { "character": "大", "meaning": "Big", "id": "big" },
-    { "character": "工", "meaning": "Construction", "id": "construction" },
-    { "character": "十", "meaning": "Cross", "id": "cross" },
-    { "character": "丶", "meaning": "Drop", "id": "drop" },
-    { "character": "入", "meaning": "Enter", "id": "enter" },
-    { "character": "ハ", "meaning": "Fins", "id": "fins" },
-    { "character": "一", "meaning": "Ground", "id": "ground" },
-    { "character": "亠", "meaning": "Lid", "id": "lid" }
+    {
+      "character": "亅",
+      "meaning": "Barb",
+      "id": "barb"
+    },
+    {
+      "character": "大",
+      "meaning": "Big",
+      "id": "big"
+    },
+    {
+      "character": "工",
+      "meaning": "Construction",
+      "id": "construction"
+    },
+    {
+      "character": "十",
+      "meaning": "Cross",
+      "id": "cross"
+    },
+    {
+      "character": "丶",
+      "meaning": "Drop",
+      "id": "drop"
+    },
+    {
+      "character": "入",
+      "meaning": "Enter",
+      "id": "enter"
+    },
+    {
+      "character": "ハ",
+      "meaning": "Fins",
+      "id": "fins"
+    },
+    {
+      "character": "一",
+      "meaning": "Ground",
+      "id": "ground"
+    },
+    {
+      "character": "亠",
+      "meaning": "Lid",
+      "id": "lid"
+    }
   ],
   "reviews": [
     {
       "type": "radical",
       "data": {
-        "character": "ハ", "meaning": "Fins", "id": "fins"
+        "character": "ハ",
+        "meaning": "Fins",
+        "id": "fins"
       }
     },
     {
       "type": "radical",
       "data": {
-        "character": "亅", "meaning": "Barb", "id": "barb"
+        "character": "亅",
+        "meaning": "Barb",
+        "id": "barb"
       }
     },
     {
       "type": "radical",
       "data": {
-        "character": "大", "meaning": "Big", "id": "big"
+        "character": "大",
+        "meaning": "Big",
+        "id": "big"
       }
     },
     {
       "type": "radical",
       "data": {
-        "character": "工", "meaning": "Construction", "id": "construction"
+        "character": "工",
+        "meaning": "Construction",
+        "id": "construction"
       }
     },
     {
       "type": "radical",
       "data": {
-        "character": "十", "meaning": "Cross", "id": "cross"
+        "character": "十",
+        "meaning": "Cross",
+        "id": "cross"
       }
     },
     {
       "type": "radical",
       "data": {
-        "character": "丶", "meaning": "Drop", "id": "drop"
+        "character": "丶",
+        "meaning": "Drop",
+        "id": "drop"
       }
     }
   ],
@@ -190,5 +274,7 @@
       ]
     }
   ],
-  "profile": { "name": "typicode" }
+  "profile": {
+    "name": "typicode"
+  }
 }
