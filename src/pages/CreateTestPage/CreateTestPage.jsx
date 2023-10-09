@@ -1,4 +1,5 @@
 import { useState } from "react";
+import cx from "classnames";
 import Container from "../../components/ui/Container/Container";
 import s from "./CreateTestPage.module.css";
 import { createTest } from "../../hooks/api/useFetchTests";
@@ -19,13 +20,21 @@ export function CreateTestPage() {
           value={name}
           onChange={(e) => setName(e.target.value)}
           name="name"
+          className={cx(s.field, s.input)}
+          placeholder="Name"
         />
+
         <textarea
           name="description"
           value={description}
           onChange={(e) => setDescription(e.target.value)}
+          className={cx(s.field, s.textarea)}
+          placeholder="Description"
         />
-        <button type="submit">Create</button>
+
+        <button className={s.button} type="submit">
+          Create
+        </button>
       </form>
     </Container>
   );

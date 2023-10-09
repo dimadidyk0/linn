@@ -1,0 +1,32 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  width: 480px;
+  margin: auto;
+}
+
+.field {
+  margin: 10px 0;
+}
+
+.input,
+.textarea {
+  background-color: var(--secondary-color);
+  border: 1px solid var(--ternary-color);
+  border-radius: 4px;
+  padding: 12px 20px;
+  font-size: 16px;
+  color: white;
+}
+
+.button {
+  margin-top: 20px;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: var(--ternary-color);
+  border: 1px solid var(--secondary-color);
+  color: var(--main-color);
+  cursor: pointer;
+}
