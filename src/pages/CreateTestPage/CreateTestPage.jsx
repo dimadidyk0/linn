@@ -8,10 +8,28 @@ const optionsForCorrectAnswer = ["a)", "b)", "c)", "d)"];
 
 export function CreateTestPage() {
   const [name, setName] = useState("");
+  const [correct, setCorrect] = useState("");
+  const [answers, setAnswers] = useState({});
   const [description, setDescription] = useState("");
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    createTest({ name, description, type: "radio" });
+    const test = {
+      name,
+      correct,
+      description,
+      type: "radio",
+      answerOptions: Object.entries(answers).map(([key, value]) => ({
+        name: key,
+        value,
+      })),
+    };
+    createTest(test).then(() => {
+      setName("");
+      setCorrect("");
+      setAnswers({});
+      setDescription("");
+    });
   };
 
   return (
@@ -42,13 +60,30 @@ export function CreateTestPage() {
                 type="radio"
                 id={option}
                 name="correct"
-                value={option}
-                checked
+                checked={correct === option}
+                onChange={() => setCorrect(option)}
               />
               <label htmlFor={option}>{option}</label>
             </div>
           ))}
         </fieldset>
+
+        {optionsForCorrectAnswer.map((option) => (
+          <div key={option}>
+            <input
+              placeholder={option}
+              className={cx(s.field, s.input)}
+              name={option}
+              value={answers[option] || ""}
+              onChange={(e) =>
+                setAnswers((prev) => ({
+                  ...prev,
+                  [option]: e.target.value,
+                }))
+              }
+            />
+          </div>
+        ))}
 
         <button className={s.button} type="submit">
           Create
