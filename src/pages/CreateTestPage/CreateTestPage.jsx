@@ -4,6 +4,8 @@ import Container from "../../components/ui/Container/Container";
 import s from "./CreateTestPage.module.css";
 import { createTest } from "../../hooks/api/useFetchTests";
 
+const optionsForCorrectAnswer = ["a)", "b)", "c)", "d)"];
+
 export function CreateTestPage() {
   const [name, setName] = useState("");
   const [description, setDescription] = useState("");
@@ -31,6 +33,22 @@ export function CreateTestPage() {
           className={cx(s.field, s.textarea)}
           placeholder="Description"
         />
+
+        <fieldset>
+          <legend>Correct:</legend>
+          {optionsForCorrectAnswer.map((option) => (
+            <div key={option}>
+              <input
+                type="radio"
+                id={option}
+                name="correct"
+                value={option}
+                checked
+              />
+              <label htmlFor={option}>{option}</label>
+            </div>
+          ))}
+        </fieldset>
 
         <button className={s.button} type="submit">
           Create
