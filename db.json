@@ -309,6 +309,31 @@
         }
       ],
       "id": "X2bIUXI"
+    },
+    {
+      "name": "Q6",
+      "correct": "a)",
+      "description": "Which of the following is an error detection method where, on the sender side, the data sent accompanies a remainder of the data bit sequence divided by a specific generator polynomial, while on the receiver side, error detection is performed by checking if the received bit sequence is divisible by the same polynomial?",
+      "type": "radio",
+      "answerOptions": [
+        {
+          "name": "a)",
+          "value": "CRC"
+        },
+        {
+          "name": "b)",
+          "value": "Hamming code"
+        },
+        {
+          "name": "c)",
+          "value": "Horizontal parity check"
+        },
+        {
+          "name": "d)",
+          "value": "Vertical parity check"
+        }
+      ],
+      "id": "C3pCdUI"
     }
   ],
   "profile": {
