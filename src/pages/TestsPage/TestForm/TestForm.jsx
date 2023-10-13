@@ -3,7 +3,7 @@ import s from "./TestFrom.module.css";
 import { useCallback, useState } from "react";
 
 export default function TestForm({
-  desription,
+  description,
   answerOptions,
   type,
   onSubmit,
@@ -22,7 +22,7 @@ export default function TestForm({
   return (
     <form className={s.root} onSubmit={handleSubmit}>
       {name && <h3 className={s.name}>{name}</h3>}
-      <p className={s.description}>{desription}</p>
+      <p className={s.description}>{description}</p>
 
       {answerOptions?.map?.((option) => {
         return (
@@ -47,7 +47,7 @@ export default function TestForm({
 
 TestForm.propTypes = {
   id: PropTypes.string.isRequired,
-  desription: PropTypes.string,
+  description: PropTypes.string,
   answerOptions: PropTypes.arrayOf(),
   type: PropTypes.string, // TODO: add const for types
   onSubmit: PropTypes.func.isRequired,

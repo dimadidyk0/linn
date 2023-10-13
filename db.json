@@ -176,7 +176,7 @@
   "lessons": [],
   "tests": [
     {
-      "desription": "When the hexadecimal value ABCD in a 32-bit register is logically shifted right by two bits, which of the following is the resulting value in hexadecimal?",
+      "description": "When the hexadecimal value ABCD in a 32-bit register is logically shifted right by two bits, which of the following is the resulting value in hexadecimal?",
       "id": "12313",
       "correct": "a)",
       "type": "radio",
@@ -200,7 +200,7 @@
       ]
     },
     {
-      "desription": "Which of the following is equivalent to the logic expression below? \n\n (x + y) * (x + z). \n\n Here, the letters are logic variables; x + y, x * y , and !x are OR, AND, and NOT operations on the corresponding variables, respectively.",
+      "description": "Which of the following is equivalent to the logic expression below? \n\n (x + y) * (x + z). \n\n Here, the letters are logic variables; x + y, x * y , and !x are OR, AND, and NOT operations on the corresponding variables, respectively.",
       "id": "2021S_FE_AM_Q1",
       "name": "Q1",
       "correct": "b)",
@@ -225,7 +225,7 @@
       ]
     },
     {
-      "desription": "Which of the following is a decimal that is represented as a finite digit octal fraction?",
+      "description": "Which of the following is a decimal that is represented as a finite digit octal fraction?",
       "id": "2021S_FE_AM_Q2",
       "name": "Q2",
       "correct": "c)",
@@ -250,7 +250,7 @@
       ]
     },
     {
-      "desription": "What is the probability that at least three coins land heads up when four unbiased coins are tossed simultaneously?",
+      "description": "What is the probability that at least three coins land heads up when four unbiased coins are tossed simultaneously?",
       "id": "123132",
       "correct": "b)",
       "type": "radio",
@@ -272,43 +272,6 @@
           "value": "5/8"
         }
       ]
-    },
-    {
-      "name": "eqweqwe",
-      "description": "123e",
-      "type": "radio",
-      "id": "hLe4bYH"
-    },
-    {
-      "name": "eqweqwe",
-      "description": "123e",
-      "type": "radio",
-      "id": "HqL25c2"
-    },
-    {
-      "name": "Rest",
-      "correct": "b)",
-      "description": "asdqwe",
-      "type": "radio",
-      "answerOptions": [
-        {
-          "name": "a)",
-          "value": "123"
-        },
-        {
-          "name": "b)",
-          "value": "qew"
-        },
-        {
-          "name": "c)",
-          "value": "ads"
-        },
-        {
-          "name": "d)",
-          "value": "5646"
-        }
-      ],
-      "id": "X2bIUXI"
     },
     {
       "name": "Q6",
