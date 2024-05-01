@@ -1,10 +1,10 @@
 import { useQuery } from "@tanstack/react-query";
+import { API_ENDPOINTS } from "../../constants/api";
 
 export const useFetchLessosns = () => {
   const query = useQuery({
     queryKey: ["lessons"],
-    queryFn: () =>
-      fetch(`http://localhost:3004/lessons`).then((r) => r.json()),
+    queryFn: () => fetch(API_ENDPOINTS.LESSONS).then((r) => r.json()),
   });
 
   return query;
