@@ -1,12 +1,11 @@
 import { useQuery } from "@tanstack/react-query";
+import { API_ENDPOINTS } from "../../constants/api";
 
 export const useFetchLevelDetail = (id) => {
   const query = useQuery({
     queryKey: ["level", id],
     queryFn: () =>
-      fetch(`http://localhost:3004/levels/${id}`).then((r) =>
-        r.json()
-      ),
+      fetch(`${API_ENDPOINTS.LEVELS}/${id}`).then((r) => r.json()),
   });
 
   return query;
