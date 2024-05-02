@@ -9,8 +9,7 @@ export default function Header() {
     <header className={s.header}>
       <Container className={s.container}>
         <Link to={ROOT_ROUTE}>
-          <div>LOGO</div>
-          {/* TODO: add logo later */}
+          <div>Home</div>
         </Link>
 
         <Navigation />

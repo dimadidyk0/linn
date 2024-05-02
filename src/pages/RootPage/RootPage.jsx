@@ -5,20 +5,20 @@ import {
   REVIEW_ROUTE,
 } from "../../constants/routeTemplates";
 import { useFetchReviews } from "../../hooks/api/useFetchReviews";
-import { useFetchLessosns } from "../../hooks/api/useFetchLessons";
+import { useFetchLevels } from "../../hooks/api/useFetchLevels";
 
 export function RootPage() {
   const { data: reviews, isLoading: isReveiwsLoading } =
     useFetchReviews();
-  const { data: lessons, isLoading: isLessonsLoading } =
-    useFetchLessosns();
+  const { data: levels, isLoading: isLevelesLoading } =
+    useFetchLevels();
 
   return (
     <Container>
       <div>
         <div>
           <Link to={LESSONS_ROUTE}>
-            Lessons {isLessonsLoading ? "..." : lessons.length}
+            Levels {isLevelesLoading ? "..." : levels.length}
           </Link>
         </div>
         <div>
@@ -27,8 +27,6 @@ export function RootPage() {
           </Link>
         </div>
       </div>
-
-      <div>Progress block</div>
     </Container>
   );
 }

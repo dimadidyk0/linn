@@ -29,7 +29,6 @@ export default function TestForm({
           <label className={s.option} key={option.name}>
             <input
               type={type}
-              name="fav_language"
               value={option.value}
               onChange={() => setAnswer(option.name)}
             />
