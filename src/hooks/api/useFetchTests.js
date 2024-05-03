@@ -1,5 +1,6 @@
-import { useQuery } from "@tanstack/react-query";
+import { useQuery, useMutation } from "@tanstack/react-query";
 import { API_ENDPOINTS } from "../../constants/api";
+import { queryClient } from "../..";
 
 export const useFetchTests = () => {
   const query = useQuery({
@@ -10,12 +11,22 @@ export const useFetchTests = () => {
   return query;
 };
 
-export const createTest = (test) => {
-  return fetch(API_ENDPOINTS.TESTS, {
-    method: "POST",
-    body: JSON.stringify(test),
-    headers: {
-      "Content-Type": "application/json",
+export const useCreateTestMutaion = ({ onSuccess }) => {
+  return useMutation({
+    mutationFn: (test) => {
+      return fetch(API_ENDPOINTS.TESTS, {
+        method: "POST",
+        body: JSON.stringify(test),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+    },
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: ["tests"] });
+      if (onSuccess) {
+        onSuccess();
+      }
     },
   });
 };

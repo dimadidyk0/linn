@@ -2,7 +2,7 @@ import { useState } from "react";
 import cx from "classnames";
 import Container from "../../components/ui/Container/Container";
 import s from "./CreateTestPage.module.css";
-import { createTest } from "../../hooks/api/useFetchTests";
+import { useCreateTestMutaion } from "../../hooks/api/useFetchTests";
 
 const optionsForCorrectAnswer = ["a)", "b)", "c)", "d)"];
 
@@ -11,6 +11,14 @@ export function CreateTestPage() {
   const [correct, setCorrect] = useState("");
   const [answers, setAnswers] = useState({});
   const [description, setDescription] = useState("");
+  const { mutate: createTest } = useCreateTestMutaion({
+    onSuccess: () => {
+      setName("");
+      setCorrect("");
+      setAnswers({});
+      setDescription("");
+    },
+  });
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -24,12 +32,7 @@ export function CreateTestPage() {
         value,
       })),
     };
-    createTest(test).then(() => {
-      setName("");
-      setCorrect("");
-      setAnswers({});
-      setDescription("");
-    });
+    createTest(test);
   };
 
   return (
